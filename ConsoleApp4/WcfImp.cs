@@ -88,14 +88,14 @@ namespace ConsoleApp4
         public ChatResponse Chat(ChatRequest model)
         {
             if (model.Name == "Сергей")
-                return new ChatResponse { Code = 228, Description = "Сервер не любит Сергея! =((((((9" };
+                return new ChatResponse { Code = 228, Description = "Сергей забанен на сервере." };
 
 
             Console.WriteLine($"Пользователь: {model.Name}");
-            Console.WriteLine($"Написал: {model.Mesaage}");
+            Console.WriteLine($"Написал: {model.Message}");
             Console.WriteLine("");
 
-            return new ChatResponse { Code = 0, Description = "Success"};
+            return new ChatResponse { Code = 0, Description = "Сообщение было успешно отправлено."};
         }
     }
 }

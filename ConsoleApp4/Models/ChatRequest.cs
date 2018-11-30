@@ -12,8 +12,8 @@ namespace ConsoleApp4.Models
     {
         [DataMember]
         public string Name { get; set; }
-        [DataMember]
 
-        public string Mesaage { get; set; }
+        [DataMember]
+        public string Message { get; set; }
     }
 }

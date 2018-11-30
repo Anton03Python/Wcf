@@ -21,7 +21,7 @@ namespace ConsoleChat
                 string input = Console.ReadLine();
                 var model = new ChatRequest
                 {
-                    Mesaage = input,
+                    Message = input,
                     Name = userName,
                 };
                 string json = JsonConvert.SerializeObject(model);
